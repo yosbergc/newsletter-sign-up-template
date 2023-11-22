@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 100%;
+    max-width: 800px;
+    display: none;
+}
+.success {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+}
+.success img {
+    margin-bottom: 30px;
+}
+.success h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: hsl(234, 29%, 20%);
+}
+.success button {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img {
+    width: 100%;
+}
+.info-container {
+    padding: 40px 20px;
+}
+.h2-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+}
+.info-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.feature {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+.feature p {
+    margin: 0px 0px 0px 10px;
+}
+.info-container label {
+    display: block;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(234, 29%, 20%);
+}
+.info-container input {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 3px 10px;
+}
+.info-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info-container button:hover {
+    background: linear-gradient(45deg, #ff5073, hsl(4, 100%, 67%));
+}
+.success button:hover {
+    background: linear-gradient(45deg, #ff5073, hsl(4, 100%, 67%));
+}
+@media (min-width: 1280px) {
+    body {
+        align-items: center;
+        min-height: 100vh;
+        background-color: hsl(234, 29%, 20%);
+    }
+    .card {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .info-container {
+        order: 1;
+    }
+    .img-container {
+        order: 2;
+    }
+    .img-container img {
+        height: 100%;
+        object-fit: contain;
+    }
+    .success {
+        background-color: white;
+        min-height: auto;
+        position: static;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    .success button {
+        position: static;
+        width: 70%;
+        margin-top: 40px;
+    }
+    .buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.hide {
+    display: none;
+}
